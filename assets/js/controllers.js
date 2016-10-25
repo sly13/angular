@@ -1,0 +1,1 @@
+angular.module("controllers",[]).controller("MainCtrl",function(o){}).controller("LoginCtrl",function(o){o.login=function(o){console.log(o)}}).controller("DashboardCtrl",function(o,n){n.go("app.login")}).controller("UsersCtrl",function(o){}).controller("HeaderCtrl",function(o){}).controller("FooterCtrl",function(o){});

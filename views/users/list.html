@@ -1,0 +1,33 @@
+<div class="container">
+	<h2>User list <button class="btn btn-sm btn-success" ng-click="createUserModal()"><i class="fa fa-plus" aria-hidden="true"></i></button></h2>
+	<table class="table table-hover table-bordered">
+		<thead>
+		<tr>
+			<th>#</th>
+			<th>First Name</th>
+			<th>Email</th>
+			<th>Phone</th>
+			<th>Website</th>
+			<th>Company</th>
+			<th>Action</th>
+		</thead>
+		<tbody>
+		<tr ng-repeat="user in users | startFrom :(currentPage - 1) * pageSize | limitTo : pageSize">
+			<th scope="row">{{user.id}}</th>
+			<td>{{user.name}}</td>
+			<td>{{user.email}}</td>
+			<td>{{user.phone}}</td>
+			<td>{{user.website}}</td>
+			<td>{{user.company.name}}</td>
+			<td style="text-align: center">
+				<a href="" class="btn btn-sm btn-warning" ng-click="createUserModalUpdate(user, $index); $event.stopPropagation() "><i class="fa fa-edit" aria-hidden="true"></i></a>
+				<a href="" class="btn btn-sm btn-danger" ng-click="deleteUser(user.id)"><i class="fa fa-trash" aria-hidden="true"></i></a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<ul uib-pagination total-items="totalItems" ng-model="currentPage" items-per-page="pageSize" max-size="5">
+
+	</ul>
+</div>
+

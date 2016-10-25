@@ -1,0 +1,1 @@
+angular.module("directives",[]).directive("appHeader",function(){return{templateUrl:"app/layouts/header.html",controller:"HeaderCtrl"}}).directive("appFooter",function(){return{templateUrl:"app/layouts/footer.html",controller:"FooterCtrl"}});

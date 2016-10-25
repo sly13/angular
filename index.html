@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="bower/ngstorage/ngStorage.min.js"></script>
+	<link rel="stylesheet" href="bower/components-font-awesome/css/font-awesome.min.css">
+	<script src="bower/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="bower/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="node_modules/angular-utf8-base64/angular-utf8-base64.js"></script>
+</head>
+<body>
+
+<div ng-controller="MainCtrl">
+	<div ui-view=""> </div>
+</div>
+
+<!--App-->
+<script src="app/js/app.js"></script>
+<script src="app/js/controllers.js"></script>
+<script src="app/js/factory.js"></script>
+<script src="app/js/service.js"></script>
+<script src="app/js/directives.js"></script>
+</body>
+</html>
